@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta Charmanderset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+    </style>        
+</head>
+<body>
+    <div class="title">
+        <h1>Escolha um Pokémon ! </h1>
+    </div>
+    <div class="container">
+        <form method="POST" action="/registrado">
+            <input class="pokemon" type="image" src="../static/img/pb.jpg" value="h">
+            <input hidden name="escolhido" type="text"  value="Bulbasaur">
+        </form>
+        <form method="POST" action="/registrado">
+            <input  name="selected" class="pokemon" type="image" src="../static/img/pc.jpg">
+            <input hidden name="escolhido" type="text"  value="Charmander">
+        </form>
+        <form method="POST" action="/registrado">
+            <input  name="selected" class="pokemon" type="image" src="../static/img/pp.png">
+            <input hidden name="escolhido" type="text"  value="Pikachu">
+        </form>
+        <form method="POST" action="/registrado">
+            <input  name="selected" class="pokemon" type="image" src="../static/img/ps.jpg">
+            <input hidden name="escolhido" type="text" " value="Squirtle">
+        </form>
+        <form method="POST" action="/registrado">
+            <input  name="selected" class="pokemon" type="image" src="../static/img/pg.jpg">
+            <input hidden name="escolhido" type="text"  value="Gengar">
+        </form>
+    </div>
+    <div class="">
+        <form action="/resultado">
+            <button type="submit" class="btn">Resultados</button>
+        </form>
+    </div>
+    </body>
+</html>

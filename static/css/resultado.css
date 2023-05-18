@@ -1,0 +1,78 @@
+
+.title{
+    margin: 5rem 0;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: larger;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+}
+
+.pokemon{
+    margin: 2rem;
+    height: 240px;
+    border: 2px solid red;
+    border-radius: 30%;
+}
+
+.pokemon{
+    position: relative;
+    top:0;
+    animation: go-back 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+.box h1{
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+}
+
+.box p, h2{
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+}
+.box h2{
+    font-size: 2rem;
+}
+
+#voltar{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: larger;
+    border:none;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(255, 98, 98);
+    margin: 0px 30px;
+}
+
+#voltar:hover{
+    background-color: rgb(245, 0, 0);
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta Charmanderset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/resultado.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+    </style>        
+</head>
+<body>
+    <div class="title">
+        <h1>Escolha um Pokémon ! </h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img class="pokemon" src="../static/img/pb.jpg" alt="Bulbasaur">
+            <h1>{{Bulbasaur_value}}</h1>    
+            <p>Treinadores Escolheram</p>
+            <h2>Bulbasaur</h2>
+        </div>
+        <div class="box">
+            <img class="pokemon" src="../static/img/pc.jpg" alt="Charmander">
+            <h1>{{Charmander_value}}</h1>
+            <p>Treinadores Escolheram</p>
+            <h2>Charmander</h2>
+        </div>
+        <div class="box">
+            <img class="pokemon" src="../static/img/pp.png" alt="Pikachu">
+            <h1>{{Pikachu_value}}</h1>
+            <p>Treinadores Escolheram</p>
+            <h2>Pikachu</h2>
+        </div>
+        <div class="box">
+            <img class="pokemon" src="../static/img/ps.jpg" alt="Squirtle">
+            <h1>{{Squirtle_value}}</h1>
+            <p>Treinadores Escolheram</p>
+            <h2>Squirtle</h2> 
+        </div>
+        <div class="box">
+            <img class="pokemon" src="../static/img/pg.jpg" alt="Gengar">
+            <h1>{{Gengar_value}}</h1>
+            <p>Treinadores Escolheram</p>
+            <h2>Gengar</h2>   
+        </div>
+    </div>
+    <div id="btn">
+        <a id="voltar" href="/">Voltar ao Início</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+.title{
+    margin: 5rem 0;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: larger;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+}
+
+.pokemon{
+    margin: 2rem;
+    height: 240px;
+    border: 2px solid red;
+    border-radius: 30%;
+}
+
+.pokemon{
+    position: relative;
+    top:0;
+    transition: 0.5s;
+}
+
+.pokemon:hover{
+    top:-70px;    
+}
+
+.btn{
+    display: flex;
+    margin: 0 auto; 
+    text-decoration: none;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: larger;
+    border:none;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(255, 98, 98);
+}
+
+.btn:hover{
+    background-color: rgb(245, 0, 0);
+}

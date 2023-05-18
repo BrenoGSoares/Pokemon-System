@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta Charmanderset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/registrado.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+    </style>        
+</head>
+<body>
+    <div class="title">
+        <h1>Uma ótima escolha!</h1>
+        <h1 id="escolha">Você escolheu o: <span>{{ pokemon }}</span>!</h1>
+    </div>
+    <div class="container">   
+        
+        <img class="pokemon" src={{imagem}} alt="">
+    </div>
+    <div id="btn">
+        <a id="voltar" href="/">Voltar ao Início</a>
+        <form action="/resultado">
+            <button type="submit" id="result">Resultados</button>
+        </form>
+    </div>
+    </body>
+</html>
