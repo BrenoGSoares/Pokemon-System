@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta Charmanderset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/login.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+        :root{
+        --cor-principal: var({{cor_cookie}});
+        --cor-principal-hover: var({{cor_hover_cookie}});
+        }
+    </style>        
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bem vindo!</h1>
+        <form class="login" action="" method="POST">
+            <input class="box" name="username" id="" type="text" placeholder="Nome de Usuário">
+            <input class="box" name="password" type="password">
+            <div class="btn">
+                <button name="action" class="btn-item" type="submit" value="login">Entrar</button>
+            </div>
+        </form> 
+        <h2>Uma conta será criada!</h2>
+        <h2><span>Sistema de Votação Pokemon</h2></span>
+        <h2><span>Senha obrigatória</h2></span>
+    </div>
+</body>
+</html>

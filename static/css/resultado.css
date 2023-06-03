@@ -15,7 +15,7 @@
 .pokemon{
     margin: 2rem;
     height: 240px;
-    border: 2px solid red;
+    border: 2px solid var();
     border-radius: 30%;
 }
 
@@ -30,7 +30,7 @@
 
 .box h1{
     text-align: center;
-    color: red;
+    color: var(--cor-principal);
     font-size: 3rem;
 }
 
@@ -55,12 +55,12 @@
     padding: 15px;
     color: #fff;
     cursor: pointer;
-    background-color: rgb(255, 98, 98);
+    background-color:var(--cor-principal);
     margin: 0px 30px;
 }
 
 #voltar:hover{
-    background-color: rgb(245, 0, 0);
+    background-color:var(--cor-principal-hover);
 }
 
 #btn{

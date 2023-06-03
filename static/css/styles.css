@@ -1,10 +1,64 @@
 
+.note{
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.note>h1 {
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 4rem;
+}
+
+.note > h1 > a {
+    text-decoration: none;
+    color:var(--cor-principal);
+}
+.note>h2{
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 3rem;
+}
+
+.note>p{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.5rem;
+}
+
+.note > a {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid transparent;
+    background-color:var(--cor-principal);
+    border-radius: 4px;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.note > a:hover{
+    background-color: var(--cor-principal-hover);
+}
+
 .title{
     margin: 5rem 0;
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
-    font-size: larger;
+    font-size: xx-large;
 }
+
+.title > p {
+    font-size: 1rem;
+}
+
+.title > p > span > a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
 
 .container{
     display: flex;
@@ -15,7 +69,7 @@
 .pokemon{
     margin: 2rem;
     height: 240px;
-    border: 2px solid red;
+    border: 2px solid var(--cor-principal);
     border-radius: 30%;
 }
 
@@ -41,9 +95,9 @@
     padding: 15px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(255, 98, 98);
+    background-color:var(--cor-principal);
 }
 
 .btn:hover{
-    background-color: rgb(245, 0, 0);
+    background-color: var(--cor-princpial-hover);
 }

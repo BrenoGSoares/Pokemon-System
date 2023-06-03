@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta Charmanderset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/config.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+        :root{
+        --cor-principal: var({{cor_cookie}});
+        --cor-principal-hover: var({{cor_hover_cookie}});
+        }
+    </style>        
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Configurações</h1>
+        <form class="cor" action="" method="POST">
+            <input class="radio" type="radio" name="cor" id="cor" value="red"> <label class="text">Vermelha</label>
+            <input class="radio" type="radio" name="cor" id="cor" value="blue"> <label class="text">Azul</label>
+            <input class="radio" type="radio" name="cor" id="cor" value="green"> <label class="text">Verde</label>
+            <input class="radio" type="radio" name="cor" id="cor" value="purple"> <label class="text">Roxa</label>
+            <input class="radio" type="radio" name="cor" id="cor" value="black"> <label class="text">Preta</label>
+            <div class="btn">
+                <button class="btn-item" type="submit">Alterar</button>
+            </div>
+        </form> 
+    </div>
+</body>

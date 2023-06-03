@@ -1,5 +1,5 @@
 span {
-    color: red;
+    color:var(--cor-principal);
 }
 .title{
     margin: 5rem 0;
@@ -18,7 +18,7 @@ span {
 .pokemon{
     margin: 2rem;
     height: 240px;
-    border: 2px solid red;
+    border: 2px solid var(--cor-principal);
     border-radius: 30%;
 }
 
@@ -39,12 +39,12 @@ span {
     padding: 15px;
     color: #fff;
     cursor: pointer;
-    background-color: rgb(255, 98, 98);
+    background-color:var(--cor-principal);
     margin: 0px 30px;
 }
 
 #voltar:hover{
-    background-color: rgb(245, 0, 0);
+    background-color: var(--cor-principal-hover);
 }
 
 #btn{

@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votação Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css')}}">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@600&display=swap');
+        :root{
+        --cor-principal: var({{cor_cookie}});
+        --cor-principal-hover: var({{cor_hover_cookie}});
+        }
     </style>        
 </head>
 <body>
+    {% if username != '' %}
     <div class="title">
+        <h1>Olá, {{username}}!</h1>
+        <p>Bem vindo ao nosso sistema, se você deseja mudar seus padrões de usuário, clique <span><a href="/config">aqui</a></span></p>
         <h1>Escolha um Pokémon ! </h1>
     </div>
     <div class="container">
@@ -41,5 +49,16 @@
             <button type="submit" class="btn">Resultados</button>
         </form>
     </div>
+    <div class="note">
+        <h1>Caso deseje finalizar a sessão <br><a href="/logout">logout</a></h1>
+    </div>
+    {% else %}
+    <div class="note">
+        <h1>Atenção</h1>
+        <h2>Você não está logado !</h2>
+        <p>Clique no botão para fazer login</p>
+        <a href="/login">Entrar</a>
+    </div>
+    {% endif %}
     </body>
 </html>
